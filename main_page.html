@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main_page.css" </link>
+	<title>Open Factory</title>
+</head>
+
+<body>
+
+	<nav class="navtop">
+		<div class="carre">
+			<h1>PAGE ADMIN</h1>
+		</div>
+	</nav>
+
+	<header>
+		<!----------------HEADER----------------->
+		<h1>
+			<a href="main_page.html"><img src="logo_openfacgros.png"></a>
+		</h1>
+		<nav class="sidebar">
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Gestion membres</a></li>
+				<li><a href="#">Statistiques</a></li>
+				<li><a href="#">Calendrier</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<p id="copyright">© Error 404</p>
+	</header>
+
+	<main>
+		<div class="page">
+			<form id="login" method="POST" action "neutre.php"="">
+				<fieldset>
+					<legend>
+						<h1>Connexion</h1>
+					</legend>
+					<div class="champ">
+						<p>Pseudo</p>
+						<p>
+							<input type="text">
+						</p>
+					</div>
+					<div class="champ">
+						<p>Password</p>
+						<p>
+							<input type="password">
+						</p>
+					</div>
+					<input class="validation" type="submit" value="Valider">
+					<!-- Validation du formulaire-->
+					<br>
+					<!-- <input type="hidden" />        -->
+					<br>
+					<!-- <input type="file" />        -->
+				</fieldset>
+			</form>
+			<div id="row1">
+				<h2>Interface Admin</h2>
+				<h5>Bienvenue $nom, content de te revoir.</h5>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#flip").click(function() {
+					$("#panel").slideToggle("slow");
+				});
+			});
+
+		</script>
+	</main>
+</body>
+
+</html>
